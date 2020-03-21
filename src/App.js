@@ -7,53 +7,30 @@ import {
   Link
 } from "react-router-dom";
 
+
+import Welcome from './components/welcome/Welcome.js'
+import Login from './components/login/Login.js'
+import Signup from './components/signup/Signup.js'
+import Dashboard from './components/dashboard/Dashboard.js'
+
+
 function App() {
   return (
 
     <Router>
-      <div>
-        <nav>
-          <ul>
-
-            <li>
-              <Link to ="/">Home</Link>
-            </li>
-
-            <li>
-              <Link to ="/login">Log in</Link>
-            </li>
-
-            <li>
-              <Link to ="/signup">Sign Up</Link>
-            </li>
-
-            <li>
-              <Link to ="/dashboard">Dashboard</Link>
-            </li>
-            
-          </ul>
-        </nav>
 
         <Switch>
 
-          <Route path="/">
-            {/* Insert Component */}
-          </Route>
+          <Route exact path="/" component={Welcome} />
 
-          <Route path="/login">
-            {/* Insert Component */}
-          </Route>
+          <Route path="/login" component={Login} />
 
-          <Route path="/signup">
-            {/* Insert Component */}
-          </Route>
+          <Route path="/signup" component={Signup} />
 
-          <Route path="/dashboard">
-            {/* Insert Component */}
-          </Route>
+          <Route path="/dashboard" component={Dashboard} />
 
         </Switch>
-      </div>
+
     </Router>
   );
 }
