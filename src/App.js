@@ -7,7 +7,6 @@ import {
   Link
 } from "react-router-dom";
 
-
 import Welcome from './components/welcome/Welcome.js'
 import Login from './components/login/Login.js'
 import Signup from './components/signup/Signup.js'
@@ -21,11 +20,15 @@ function App() {
 
         <Switch>
 
-          <Route exact path="/" component={Welcome} />
+          <Route exact path="/">
+            <Welcome type={<Login />}/>
+          </Route>
 
           <Route path="/login" component={Login} />
 
-          <Route path="/signup" component={Signup} />
+          <Route path="/signup">
+            <Welcome type={<Signup />}/>
+          </Route>
 
           <Route path="/dashboard" component={Dashboard} />
 
