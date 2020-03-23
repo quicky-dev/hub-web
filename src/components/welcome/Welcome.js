@@ -1,5 +1,10 @@
 import React, { Component } from "react";
 import "./Welcome.css";
+import logo from '../../assets/the-hub.png'
+
+// figure out how to pass a component as a prop: welcome -> login
+
+// import signup from '../signup/Signup.js'
 
 export class Welcome extends Component {
   render() {
@@ -7,11 +12,10 @@ export class Welcome extends Component {
       <div className="welcome">
         <section className="container">
           <div className="left">
-            <h1>The Hub.</h1>
+            <img className="welcome-logo" src={logo} alt="The Hub." />
           </div>
           <div className="right">
-            {/* Signup/Login Form Component Here */}
-            <h3>Form</h3>
+              {this.props.type}
           </div>
         </section>
       </div>
@@ -20,3 +24,5 @@ export class Welcome extends Component {
 }
 
 export default Welcome;
+
+// 75% media query hide left div and remove welcome shadows
