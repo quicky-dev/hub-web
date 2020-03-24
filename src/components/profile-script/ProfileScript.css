@@ -1,0 +1,10 @@
+.script {
+    border: 1px black solid;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.script h4 {
+    margin-left: 1em;
+}
