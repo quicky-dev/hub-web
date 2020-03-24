@@ -4,7 +4,7 @@ class Login extends Component {
   render() {
     return (
       <div class="form-container">
-        <form action="" method="post" class="login-form">
+        <form action="/user/girugamesh" method="get" class="login-form">
           <div id="form-row">
             <h1 class="form-label">Login</h1>
           </div>

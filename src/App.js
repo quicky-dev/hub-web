@@ -12,6 +12,7 @@ import Login from './components/login/Login.js'
 import Signup from './components/signup/Signup.js'
 import Dashboard from './components/dashboard/Dashboard.js'
 import Profile from './components/profile/Profile.js'
+import Script from './components/script/Script.js'
 
 function App() {
   return (
@@ -24,16 +25,21 @@ function App() {
             <Welcome type={<Login />}/>
           </Route>
 
-          <Route path="/login" component={Login} />
 
           <Route path="/signup">
             <Welcome type={<Signup />}/>
           </Route>
 
-          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/dashboard">
+            <Dashboard user="MakeSchool"/>
+          </Route>
 
-          <Route path="/user/username">
+          <Route path="/user/girugamesh">
             <Profile />
+          </Route>
+
+          <Route path="/script/girugamesh-1">
+            <Script />
           </Route>
 
         </Switch>

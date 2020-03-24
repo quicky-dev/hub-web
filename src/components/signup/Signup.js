@@ -5,7 +5,7 @@ class Signup extends Component {
     render() {
         return(
             <div class="form-container">
-                <form action="" method="post" class="signup-form">
+                <form action="/dashboard" method="get" class="signup-form">
                 <div id="form-row">
                     <h1 class="form-label">Sign Up</h1>
                 </div>
