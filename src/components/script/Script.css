@@ -1,0 +1,18 @@
+.summary-option {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 25%;
+}
+
+.thinga {
+    color: #000;
+    margin: .35em;
+}
+
+.your-script {
+    margin: 250px;
+}
+.summary {
+    margin: 25px 0px;
+}
