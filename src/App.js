@@ -11,7 +11,7 @@ import Welcome from './components/welcome/Welcome.js'
 import Login from './components/login/Login.js'
 import Signup from './components/signup/Signup.js'
 import Dashboard from './components/dashboard/Dashboard.js'
-
+import Profile from './components/profile/Profile.js'
 
 function App() {
   return (
@@ -31,6 +31,10 @@ function App() {
           </Route>
 
           <Route path="/dashboard" component={Dashboard} />
+
+          <Route path="/user/username">
+            <Profile />
+          </Route>
 
         </Switch>
 
