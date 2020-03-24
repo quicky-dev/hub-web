@@ -5,7 +5,10 @@ class Script extends Component {
     render() {
         return(
             <div className="Script">
-                <p>Script</p>
+                <h1>Script Summary</h1>
+                <code>
+                    
+                </code>
             </div>
         );
     }
