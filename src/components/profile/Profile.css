@@ -28,6 +28,10 @@
     margin: 0 auto;
 }
 
+.profile-content h2 {
+    color: #fa983a;
+}
+
 .profile-social {
     display: flex;
     flex-direction: row;
@@ -38,3 +42,4 @@
     align-items: right;
     margin-left: auto;
 }
+

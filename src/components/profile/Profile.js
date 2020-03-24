@@ -31,7 +31,7 @@ class Profile extends Component {
           <hr />
           <h2>Scripts</h2>
           {/* LOOP AND DISPLAY SCRIPTS RELATED TO USER */}
-          <Script name="Girugascript"/>
+          <Script name="Girugascript" date="4/20/2019"/>
         </div>
       </div>
     );
