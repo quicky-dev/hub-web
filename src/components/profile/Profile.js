@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "../profile/Profile.css";
 import Script from "../profile-script/ProfileScript.js";
+import ReactDOM from 'react-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookSquare, faGithubSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 class Profile extends Component {
   render() {
@@ -11,6 +14,14 @@ class Profile extends Component {
           <div className="profile-credentials">
             <h1>Ryan Nguyen</h1>
             <h3>iOS Developer</h3>
+            <div className="profile-social">
+              <FontAwesomeIcon icon={faFacebookSquare} style={{ color: 'white' }} size="2x" />
+              <FontAwesomeIcon icon={faGithubSquare} style={{ color: 'white' }} size="2x" />
+              <FontAwesomeIcon icon={faTwitterSquare} style={{ color: 'white' }} size="2x" />
+            </div>
+            
+
+            
           </div>
         </div>
         
@@ -26,5 +37,6 @@ class Profile extends Component {
     );
   }
 }
+
 
 export default Profile;

@@ -27,3 +27,14 @@
     width: 75%;
     margin: 0 auto;
 }
+
+.profile-social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.profile-social svg {
+    align-items: right;
+    margin-left: auto;
+}
